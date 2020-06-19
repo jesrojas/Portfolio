@@ -1,0 +1,72 @@
+@include tablet {
+    .menu-btn {
+        visibility: hidden;
+    }
+
+    .nav {
+        visibility: visible;
+
+        .menu-nav {
+            display: block;
+            transform: translateY(0);
+            height: 100%;
+            text-align: right;
+            margin: 0;
+
+            &__item {
+                display: inline;
+                padding-right: 1.5rem;
+            }
+
+            &__link {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .about__bio {
+        font-size: 1.5rem;
+    }
+
+    .projects {
+        &__bio-image {
+            height: 40vh;
+        }
+
+        &__card {
+            flex: 0 1 48%
+        }
+
+        .text-secondary {
+            font-size: 3rem;
+        }
+
+        &__btns {
+            position: static;
+            flex-direction: column;
+        }
+
+        &__btn {
+            width: 100%;
+        }
+    }
+}
+
+@include mobile {
+    .projects {
+        padding-left: 3rem;
+
+        &__card {
+            flex: 0 1 90%;
+        }
+        
+        &__btns {
+            position: static;
+            flex-direction: column;
+        }
+
+        &__btn {
+            width: 100%;
+        }
+    }
+}

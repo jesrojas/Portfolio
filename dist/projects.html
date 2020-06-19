@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alberto's Projects</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+</head>
+
+<body>
+    <!-- particles.js container -->
+    <div id="particles-js" style="
+                                position: fixed;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                z-index: -1;">
+    </div>
+    <header class="navigation">
+        <div class="menu-btn">
+            <span class="menu-btn__burger"></span>
+        </div>
+
+        <nav class="nav">
+            <ul class="menu-nav">
+                <li class="menu-nav__item">
+                    <a href="index.html" class="menu-nav__link">Home</a>
+                </li>
+                <!-- <li class="menu-nav__item">
+                    <a href="about.html" class="menu-nav__link">About</a>
+                </li> -->
+                <li class="menu-nav__item active">
+                    <a href="projects.html" class="menu-nav__link">Projects</a>
+                </li>
+                <li class="menu-nav__item">
+                    <a href="contact.html" class="menu-nav__link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="projects">
+            <div class="projects__bio-image">
+                <h1 class="text-secondary">My Projects</h1>
+            </div>
+
+            <div class="projects__cards">
+                    <div class="projects__card animate__animated animate__flipInY">
+                        <a href="https://arveys-clothing.herokuapp.com/">
+                            <img class="projectImage" src="../images/ecommerce.png" alt="ecommerce">
+                        </a>
+                            <h3>E-commerce</h3>
+                            <p>React PWA using Redux-Sagas, Firebase, and Stripe Project from Udemy React Course by Andrei Neagoie</p>
+                            <div class="projects__btns">
+                                <a href="https://arveys-clothing.herokuapp.com/" class="projects__btn"><i class="fa fa-eye" aria-hidden="true"></i> Demo</a>
+                                <a href="https://github.com/jesrojas/ecommerce" class="projects__btn"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
+                            </div>
+                    </div>
+                <div class="projects__card animate__animated animate__flipInY">
+                    <a href="https://smartface-jesrojas.herokuapp.com/">
+                        <img class="projectImage" src="../images/smartface.jpg" alt="smartface">
+                    </a>
+                    <h3>Smart-face API</h3>    
+                    <p>Face recognition app made with ReactJS, NodeJS/express, PostgreSQL, and the clarifai API
+                        </p>
+                    <div class="projects__btns">
+                        <a href="https://smartface-jesrojas.herokuapp.com/" class="projects__btn"><i class="fa fa-eye" aria-hidden="true"></i> Demo</a>
+                        <a href="https://github.com/jesrojas/smartface" class="projects__btn"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
+                    </div>
+                </div>
+                <div class="projects__card animate__animated animate__flipInY">
+                    <a href="https://jesrojas.github.io/blockchain/">
+                        <img class="projectImage" src="../images/blockchain.png" alt="blockchain">
+                    </a>
+                    <h3>Blockchain</h3>    
+                    <p>Blockchain project made with javascript and Creative Tim Material Kit free Bootstrap 4 template
+                        </p>
+                    <div class="projects__btns">
+                        <a href="https://jesrojas.github.io/blockchain/" class="projects__btn"><i class="fa fa-eye" aria-hidden="true"></i> Demo</a>
+                        <a href="https://github.com/jesrojas/blockchain" class="projects__btn"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="social-icons">
+                <a href="https://github.com/jesrojas">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/alberto-rojas-ba52611a0/">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+            </div>
+
+            <footer>&copy; Copyright 2020</footer>
+        </section>
+    </main>
+
+    <script src="https://kit.fontawesome.com/0bdb668167.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
