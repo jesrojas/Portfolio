@@ -467,6 +467,9 @@
   .projects__btn {
     width: 100%;
   }
+  .contact {
+    padding-top: 28vh;
+  }
 }
 
 @media screen and (max-width: 600px) {
