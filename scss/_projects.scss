@@ -10,7 +10,8 @@
         justify-content: flex-end;
         
         .text-secondary {
-            font-size: 3rem;
+            font-family: 'Stardos Stencil', cursive;
+            font-size: 3.5rem;
             margin-bottom: 2rem;
             text-align: center;
         }
@@ -44,6 +45,7 @@
         border-radius: 10px;
         box-shadow: -1rem 0 3rem #000;
         flex: 0 1 28%;
+        max-height: auto;
 
         .projectImage {
             border-radius: 10px 10px 0px 0px;
@@ -54,7 +56,7 @@
     }
 
     &__btns {
-        position: absolute;
+        position: static;
         width: 100%;    
         display: flex;
         justify-content: center;
