@@ -332,7 +332,7 @@
 }
 
 .projects__btns {
-  position: static;
+  position: relative;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -494,9 +494,8 @@
     width: 100%;
   }
   .projectTitle {
-    position: absolute;
-    padding-left: 3.2rem;
-    padding-bottom: 2.5rem;
+    text-align: center;
+    margin-bottom: 0rem;
   }
 }
 
