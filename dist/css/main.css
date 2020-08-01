@@ -3,6 +3,23 @@
           box-sizing: border-box;
 }
 
+body::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+body::-webkit-scrollbar-track {
+    background: #1E1E24
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #210586;
+    border-radius: 6px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: rgba(33,5,134, 0.7);
+}
+
 .home {
   height: 100%;
   padding-top: 40vh;
