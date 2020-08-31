@@ -424,7 +424,7 @@
 
 .contact {
   height: 100%;
-  padding-top: 40vh;
+  padding-top: 33vh;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -562,6 +562,9 @@
   }
   .nav-item:nth-last-child(-n+1) {
     display: none;
+  }
+  .contact {
+    padding-top: 25vh;
   }
 }
 

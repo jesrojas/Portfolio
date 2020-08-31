@@ -109,6 +109,10 @@
     .nav-item:nth-last-child(-n+1) {
         display: none;
     }
+
+    .contact {
+        padding-top: 25vh;
+    }
 }
 
 @include smallmobile {
