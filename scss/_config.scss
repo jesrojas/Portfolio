@@ -22,8 +22,20 @@ $secondary-color: #FF652F;
     }
 }
 
+@mixin smallmobile {
+    @media screen and (max-width: 400px) {
+        @content;
+    }
+}
+
 @mixin mobile {
     @media screen and (max-width: 600px) {
+        @content;
+    }
+}
+
+@mixin bigmobile {
+    @media screen and (max-width: 900px) {
         @content;
     }
 }
@@ -42,6 +54,12 @@ $secondary-color: #FF652F;
 
 @mixin media-xl {
     @media screen and (min-width: 1600px) {
+        @content;
+    }
+}
+
+@mixin screenHeight {
+    @media screen and (max-height: 730px) {
         @content;
     }
 }

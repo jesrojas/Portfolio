@@ -1,11 +1,49 @@
 .home {
     height: 100%;
-    padding-top: 40vh;
+    padding-top: 15vh;
     overflow: hidden;
     align-items: center;
     text-align: center;
     // background: url('../img/model-1.jpg');
     background-size: cover;
+
+    .myWork-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 3rem;
+
+        .myWork-title {
+            margin-top: 0;
+            font-weight: bolder;
+        }
+    
+        .myWork-link {
+
+            margin-top: 5px;
+    
+            .arrow-right {
+                border: solid white;
+                border-width: 0 3px 3px 0;
+                display: inline-block;
+                padding: 3px;
+                margin-right: 5px;
+                transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+            }
+            
+            a {
+                color: $secondary-color;
+                text-decoration: underline;
+                font-weight: bold;
+                font-size: 1em;
+            }
+        }
+    }
+
+    &__resume {
+        margin: 0 1rem;
+    }
 
     &__name {
         font-size: 5rem;
@@ -21,4 +59,89 @@
 
     }
 }
+
+.carrousel {
+    position: relative;
+    width: 90%;
+    margin-left: 4rem;
+
+        .my-slider {
+        
+            .currentCard {
+                    margin-bottom: 2rem;
+                    background-color: #17141d;
+                    border-radius: 10px;
+                    box-shadow: -1rem 0 3rem #000;
+                    height: 30vh;
+        
+                    .homeProjectName {
+                        text-align: center;
+                        font-size: 1.5rem;
+                        text-decoration: underline;
+                    }
+        
+                    .bannerLogo {
+                        width: 8rem;
+                        height: 8rem;
+                        box-shadow: 0 0.5rem 1rem rgba(black, 0.3);
+                        border-radius: 50%;
+                        transition: transform 200ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
+                        border: 3px solid white;
+                        margin-top: 2rem;
+        
+                        &:hover {
+                            transform: scale(1.2);
+                        }
+                    }
+            }
+        }
+        
+        .customize-tools {
+            
+            .controls {
+                text-align: center;
+        
+                .arrow {
+                    position: absolute;
+                    top: 43%;
+                    margin: 1rem;
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    background: transparent;
+                    border-top: 1vmin solid white;
+                    border-right: 1vmin solid white;
+                    box-shadow: 0 0 0 lightgray;
+                    transition: all 200ms ease;
+                    list-style: none;
+                    
+                    &.left {
+                        left: 0;
+                        transform: translate3d(0,-50%,0) rotate(-135deg);
+                    }
+        
+                    &.right {
+                        right: 0;
+                        transform: translate3d(0,-50%,0) rotate(45deg);
+                    }
+                    
+                    &:hover {
+                        border-color: $secondary-color;
+                        box-shadow: 0.5vmin -0.5vmin 0 white;
+                    }
+                    
+                    &:before { // for better hit area
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-40%,-60%) rotate(45deg);
+                        width: 200%;
+                        height: 200%;
+                    }
+                }
+            }
+    }
+}
+
+
 

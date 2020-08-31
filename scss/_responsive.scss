@@ -1,35 +1,37 @@
 @include tablet {
-    .menu-btn {
-        visibility: hidden;
+    main {
+        width: 100% !important;
     }
 
-    .nav {
-        visibility: visible;
+    .navbar {
+        bottom: 0;
+        width: 100vw;
+        height: 4rem;
 
-        .menu-nav {
-            display: block;
-            transform: translateY(0);
-            height: 100%;
-            text-align: right;
-            margin: 0;
-
-            &__item {
-                display: inline;
-                padding-right: 1.5rem;
-            }
-
-            &__link {
-                font-size: 1.5rem;
-            }
+        &:hover {
+            width: 100vw;
         }
 
-        .menu-nav-home, .menu-nav-contact {
-            background-color: rgba(16, 14, 23, 0);
+        .navbar-nav {
+            flex-direction: row;
+
+            .nav-link {
+                flex-direction: column;
+                justify-content: center;
+                padding-bottom: 1.25rem;
+
+                .link-text {
+                    display: block;
+                    margin-top: 0.3em;
+                    margin-left: 0;
+                    color: white;
+                }
+            }
         }
     }
 
-    .home {
-        padding-top: 30vh;
+    .carrousel {
+        margin-left: 2.5rem;
     }
 
     .about__bio {
@@ -37,9 +39,6 @@
     }
 
     .projects {
-        &__bio-image {
-            height: 40vh;
-        }
 
         &__card {
             flex: 0 1 48%
@@ -62,14 +61,35 @@
     .contact {
         padding-top: 28vh;
     }
+
+    .copyright_projects {
+        margin-bottom: 4rem;
+    }
+}
+
+@include bigmobile {
+    .carrousel {
+        width: 100%;
+        margin-left: 0;
+    }
 }
 
 @include mobile {
+
+    .home {
+        padding-top: 5vh;
+
+        &__name {
+            font-size: 3.3rem;
+        }
+    }
+
     .projects {
         padding-left: 3rem;
 
         &__card {
             flex: 0 1 90%;
+            margin-left: 1rem;
         }
         
         &__btns {
@@ -83,7 +103,42 @@
     }
 
     .projectTitle {
-        text-align: center;
-        margin-bottom: 0rem;
+        margin-top: 10vh;
+    }
+
+    .nav-item:nth-last-child(-n+1) {
+        display: none;
+    }
+}
+
+@include smallmobile {
+    .nav-item:nth-last-child(-n+2) {
+        display: none;
+    }
+
+    .carrousel {
+
+        .my-slider {
+
+            .currentCard {
+                
+                .bannerLogo {
+                    width: 35vmin;
+                    height: 35vmin;
+                }
+            }
+        }
+    }
+}
+
+@include screenHeight {
+    .carrousel {
+        .my-slider {
+            .currentCard {
+                .homeProjectName {
+                    visibility: hidden;
+                }
+            }
+        }
     }
 }

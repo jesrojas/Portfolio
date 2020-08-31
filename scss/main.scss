@@ -12,7 +12,7 @@ body {
     height: 100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1;
-
+    margin: 0;
 }
 
 h1, h2, h3 {
@@ -28,16 +28,11 @@ a {
     color: $secondary-color;
 }
 
-.navigation {
-    position: fixed;
-    z-index: 2;
-    width: 100%;
-    padding: 1rem;
-}
-
 main {
     height: 100%;
-    width: 100%;
+    width: 95%;
+    position: absolute;
+    right: 0;
 
     .social-icons {
         position: fixed;

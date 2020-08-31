@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alberto Rojas</title>
     <link rel="stylesheet" href="./dist/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
 </head>
 <body>
@@ -16,30 +17,46 @@
                             width: 100%;
                             height: 100%;
                             z-index: -1;">
+
                             </div> 
 
-    <header class="navigation">
-        <div class="menu-btn">
-            <span class="menu-btn__burger"></span>
-        </div>
-
-        <nav class="nav">
-            <ul class="menu-nav menu-nav-home">
-                <li class="menu-nav__item active">
-                    <a href="index.html" class="menu-nav__link">Home</a>
+        <nav class="navbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                    <i class="fas fa-home fa-2x"></i>
+                    <span class="link-text">Home</span>
+                    </a>
                 </li>
-                <!-- <li class="menu-nav__item">
-                    <a href="about.html" class="menu-nav__link">About</a>
+                <!-- <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
                 </li> -->
-                <li class="menu-nav__item">
-                    <a href="./dist/projects.html" class="menu-nav__link">Projects</a>
+                <li class="nav-item">
+                    <a href="./dist/projects.html" class="nav-link">
+                    <i class="fas fa-briefcase fa-2x"></i>
+                    <span class="link-text">Projects</span>
+                    </a>
                 </li>
-                <li class="menu-nav__item">
-                    <a href="./dist/contact.html" class="menu-nav__link">Contact</a>
+                <li class="nav-item">
+                    <a href="./dist/contact.html" class="nav-link">
+                    <i class="fas fa-phone fa-2x"></i>
+                    <span class="link-text">Contact</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://github.com/jesrojas" target="_blank" class="nav-link">
+                        <i class="fab fa-github fa-2x"></i>
+                        <span class="link-text">Github</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.linkedin.com/in/alberto-rojas-ba52611a0/" target="_blank" class="nav-link">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                        <span class="link-text">LinkedIn</span>
+                    </a>
                 </li>
             </ul>
         </nav>
-    </header>
 
     <main>
         <section class="home">
@@ -47,17 +64,51 @@
             <h1 class="home__name animate__animated animate__fadeInLeft">
                 Alberto <span class="home__name--last">Rojas</span>
             </h1>
-            <h2 class="animate__animated animate__fadeInLeft">
+            <h2 class="home__resume animate__animated animate__fadeInLeft">
                 I'm a Front-End Developer, open source enthusiast, and an agile learner
             </h2>
+            
+            <section class="myWork-section">
+                <h2 class="myWork-title">Projects</h2>
+                <span class="myWork-link">
+                    <a href="./dist/projects.html">
+                        <i class="arrow-right"></i>View All Work</a>
+                </span>
+            </section>
 
-            <div class="social-icons">
-                <a href="https://github.com/jesrojas">
-                    <i class="fab fa-github fa-2x"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/alberto-rojas-ba52611a0/">
-                    <i class="fab fa-linkedin fa-2x"></i>
-                </a>
+            <div class="carrousel">
+                <div class="my-slider">
+                    <div class="currentCard">
+                        <a href="https://arveys-clothing.herokuapp.com/" target="_blank">
+                            <img class="bannerLogo" src="./images/ecommerce_cropped.png" alt="ecommerce">
+                        </a>
+                        <p class="homeProjectName">
+                            <a href="https://arveys-clothing.herokuapp.com/" target="_blank">E-Commerce</a>
+                        </p>
+                    </div>
+                    <div class="currentCard">
+                        <a href="https://smartface-jesrojas.herokuapp.com/" target="_blank">
+                            <img class="bannerLogo" src="./images/smartface_cropped.png" alt="smartface">
+                        </a>
+                        <p class="homeProjectName">
+                            <a href="https://smartface-jesrojas.herokuapp.com/" target="_blank">Smart-Face API</a>
+                        </p>
+                    </div>
+                    <div class="currentCard">
+                        <a href="https://nifty-ritchie-729f26.netlify.app/" target="_blank">
+                            <img class="bannerLogo" src="./images/breaking_bad_cropped.png" alt="breakingbad">
+                        </a>
+                        <p class="homeProjectName">
+                            <a href="https://nifty-ritchie-729f26.netlify.app/" target="_blank">Breaking Bad Cast</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="customize-tools">
+                    <ul class="controls" id="customize-controls">
+                        <li class="arrow left"></li>
+                        <li class="arrow right"></li>
+                    </ul>
+                </div>
             </div>
 
             <footer>&copy; Copyright 2020</footer>
@@ -66,6 +117,33 @@
 
     <script src="https://kit.fontawesome.com/0bdb668167.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="./dist/js/main.js"></script>
+    <script>
+        var slider = tns({
+            container: '.my-slider',
+            items: 1,
+            mouseDrag: true,
+            edgePadding: 40,
+            autoHeight: true,
+            nav: false,
+            controlsContainer: "#customize-controls",
+            controlsPosition: "bottom",
+            controlsText: ["<", ">"],
+            responsive: {
+                520: {
+                    arrowKeys: true,
+                    gutter: 20,
+                    items: 2
+                },
+                700: {
+                    gutter: 30
+                },
+                901: {
+                    items: 3
+                }
+            }
+        });
+    </script>
 </body>
 </html>

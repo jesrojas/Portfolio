@@ -19,34 +19,47 @@
                                 height: 100%;
                                 z-index: -1;">
     </div>
-    <header class="navigation">
-        <div class="menu-btn">
-            <span class="menu-btn__burger"></span>
-        </div>
 
-        <nav class="nav">
-            <ul class="menu-nav">
-                <li class="menu-nav__item">
-                    <a href="../index.html" class="menu-nav__link">Home</a>
-                </li>
-                <!-- <li class="menu-nav__item">
-                    <a href="about.html" class="menu-nav__link">About</a>
-                </li> -->
-                <li class="menu-nav__item active">
-                    <a href="projects.html" class="menu-nav__link">Projects</a>
-                </li>
-                <li class="menu-nav__item">
-                    <a href="contact.html" class="menu-nav__link">Contact</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="navbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="../index.html" class="nav-link">
+                    <i class="fas fa-home fa-2x"></i>
+                    <span class="link-text">Home</span>
+                </a>
+            </li>
+            <!-- <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li> -->
+            <li class="nav-item">
+                <a href="./projects.html" class="nav-link">
+                    <i class="fas fa-briefcase fa-2x"></i>
+                    <span class="link-text">Projects</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="./contact.html" class="nav-link">
+                    <i class="fas fa-phone fa-2x"></i>
+                    <span class="link-text">Contact</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="https://github.com/jesrojas" target="_blank" class="nav-link">
+                    <i class="fab fa-github fa-2x"></i>
+                    <span class="link-text">Github</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="https://www.linkedin.com/in/alberto-rojas-ba52611a0/" target="_blank" class="nav-link">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                    <span class="link-text">LinkedIn</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
 
     <main>
-        <section class="projects">
-            <div class="projects__bio-image">
-                <h1 class="projectTitle text-secondary" style="font-family: 'Segoe UI';">PROJECTS</h1>
-            </div>
+            <h1 class="projectTitle" style="font-family: 'Segoe UI';">PROJECTS</h1>
 
             <div class="projects__cards">
                     <div class="projects__card animate__animated animate__flipInY">
@@ -98,17 +111,8 @@
                 </div>
             </div>
 
-            <div class="social-icons">
-                <a href="https://github.com/jesrojas">
-                    <i class="fab fa-github fa-2x"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/alberto-rojas-ba52611a0/">
-                    <i class="fab fa-linkedin fa-2x"></i>
-                </a>
-            </div>
-
-            <footer>&copy; Copyright 2020</footer>
-        </section>
+            
+            <footer class="copyright_projects">&copy; Copyright 2020</footer>
     </main>
 
     <script src="https://kit.fontawesome.com/0bdb668167.js" crossorigin="anonymous"></script>
