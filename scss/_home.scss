@@ -113,6 +113,7 @@
                     box-shadow: 0 0 0 lightgray;
                     transition: all 200ms ease;
                     list-style: none;
+                    outline: none;
                     
                     &.left {
                         left: 0;
@@ -142,6 +143,3 @@
             }
     }
 }
-
-
-

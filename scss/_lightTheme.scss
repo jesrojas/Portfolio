@@ -1,0 +1,124 @@
+$third-color: #6B0504;
+$fourth-color: #001514;
+
+.light {
+    background: #FBFFFE;
+
+    i {
+        color: $fourth-color;
+    }
+
+    .home {
+        color: $fourth-color;
+        
+        h2 {
+            font-weight: 600;
+        }
+
+        .home__name {
+            color: $fourth-color;
+            font-weight: 600;
+            border-bottom: 2px solid $fourth-color;
+
+            &--last {
+                color: $third-color;
+            }
+        }
+
+        .myWork-section {
+                
+                .myWork-title {
+                    font-weight: 700;
+                }
+
+                .myWork-link a {
+                    color: $third-color;
+                }
+        }
+    }
+    
+    .navbar {
+        background-color: #E0E0E0;
+    
+        .navbar-nav .nav-item .nav-link {
+    
+            &:hover {
+                background-color: #17141D;
+    
+                i {
+                    color: white;
+                }
+    
+                .link-text {
+                    color: white;
+                }
+            }
+            
+            .link-text {
+                color: $fourth-color;
+                font-weight: 600;
+            }
+        }
+    }
+    
+    .carrousel {
+        
+        .my-slider {
+    
+            .currentCard {
+                background-color: #f5e5c2;
+                box-shadow: -1rem 0 3rem white;
+    
+                .homeProjectName a {
+                    color: $fourth-color;
+                    font-weight: 600;
+                }
+            }
+        }
+    
+        .customize-tools .controls .arrow {
+            border-top: 1vmin solid $third-color;
+            border-right: 1vmin solid $third-color;
+    
+            &:hover {
+                border-color: #F96762;
+                box-shadow: 0.5vmin -0.5vmin 0 $third-color;
+            }
+        }
+    }
+
+    .projectTitle {
+        color: $third-color;
+    }
+
+    .projects {
+    
+        &__card {
+            background-color: #f5e5c2;
+            box-shadow: -1rem 0 3rem #F5DCA3;
+            color: $fourth-color;
+            font-weight: 600;
+        }
+
+        &__btn {
+            color: $fourth-color;
+            font-weight: 600;
+        }
+    }
+
+    .contact {
+
+        color: $fourth-color;
+        font-weight: 600;
+
+        h2 {
+            color: $third-color;
+            font-weight: 600;
+        }
+
+        .text-secondary {
+            color: $third-color;
+        }
+    }
+}
+

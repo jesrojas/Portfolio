@@ -28,10 +28,16 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        height: 100%;
 
         .nav-item {
             width: 100%;
-            margin: 5px;
+            margin: 5px 0px;
+
+            &:last-child {
+                margin-top: auto;
+                cursor: pointer;
+            }
 
             .nav-link {
                 display: flex;
@@ -59,6 +65,16 @@
             }
         }
     }
+}
+
+.lightSwitch {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1rem;
+    display: none;
+    z-index: 1;
+    cursor: pointer;
 }
 
 // @for $i from 1 through 4 {

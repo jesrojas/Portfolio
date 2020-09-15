@@ -14,11 +14,19 @@
 
         .navbar-nav {
             flex-direction: row;
+            
+            .nav-item {
+                margin-top: auto;
+
+                &:nth-last-child(-n+1) {
+                    display: none;
+                }
+            }
 
             .nav-link {
                 flex-direction: column;
                 justify-content: center;
-                padding-bottom: 1.25rem;
+                padding-bottom: 0.75rem;
 
                 .link-text {
                     display: block;
@@ -28,6 +36,10 @@
                 }
             }
         }
+    }
+
+    .lightSwitch {
+        display: block;
     }
 
     .carrousel {
@@ -106,7 +118,7 @@
         margin-top: 10vh;
     }
 
-    .nav-item:nth-last-child(-n+1) {
+    .nav-item:nth-last-child(-n+2) {
         display: none;
     }
 
@@ -116,7 +128,7 @@
 }
 
 @include smallmobile {
-    .nav-item:nth-last-child(-n+2) {
+    .nav-item:nth-last-child(-n+3) {
         display: none;
     }
 

@@ -128,6 +128,7 @@
   -webkit-transition: all 200ms ease;
   transition: all 200ms ease;
   list-style: none;
+  outline: none;
 }
 
 .carrousel .customize-tools .controls .arrow.left {
@@ -198,11 +199,17 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100%;
 }
 
 .navbar .navbar-nav .nav-item {
   width: 100%;
-  margin: 5px;
+  margin: 5px 0px;
+}
+
+.navbar .navbar-nav .nav-item:last-child {
+  margin-top: auto;
+  cursor: pointer;
 }
 
 .navbar .navbar-nav .nav-item .nav-link {
@@ -233,6 +240,16 @@
 
 .navbar .navbar-nav .nav-item .nav-link:hover .link-text {
   color: white;
+}
+
+.lightSwitch {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1rem;
+  display: none;
+  z-index: 1;
+  cursor: pointer;
 }
 
 .about {
@@ -458,6 +475,114 @@
   margin-top: 2rem;
 }
 
+.light {
+  background: #FBFFFE;
+}
+
+.light i {
+  color: #001514;
+}
+
+.light .home {
+  color: #001514;
+}
+
+.light .home h2 {
+  font-weight: 600;
+}
+
+.light .home .home__name {
+  color: #001514;
+  font-weight: 600;
+  border-bottom: 2px solid #001514;
+}
+
+.light .home .home__name--last {
+  color: #6B0504;
+}
+
+.light .home .myWork-section .myWork-title {
+  font-weight: 700;
+}
+
+.light .home .myWork-section .myWork-link a {
+  color: #6B0504;
+}
+
+.light .navbar {
+  background-color: #E0E0E0;
+}
+
+.light .navbar .navbar-nav .nav-item .nav-link:hover {
+  background-color: #17141D;
+}
+
+.light .navbar .navbar-nav .nav-item .nav-link:hover i {
+  color: white;
+}
+
+.light .navbar .navbar-nav .nav-item .nav-link:hover .link-text {
+  color: white;
+}
+
+.light .navbar .navbar-nav .nav-item .nav-link .link-text {
+  color: #001514;
+  font-weight: 600;
+}
+
+.light .carrousel .my-slider .currentCard {
+  background-color: #f5e5c2;
+  -webkit-box-shadow: -1rem 0 3rem white;
+          box-shadow: -1rem 0 3rem white;
+}
+
+.light .carrousel .my-slider .currentCard .homeProjectName a {
+  color: #001514;
+  font-weight: 600;
+}
+
+.light .carrousel .customize-tools .controls .arrow {
+  border-top: 1vmin solid #6B0504;
+  border-right: 1vmin solid #6B0504;
+}
+
+.light .carrousel .customize-tools .controls .arrow:hover {
+  border-color: #F96762;
+  -webkit-box-shadow: 0.5vmin -0.5vmin 0 #6B0504;
+          box-shadow: 0.5vmin -0.5vmin 0 #6B0504;
+}
+
+.light .projectTitle {
+  color: #6B0504;
+}
+
+.light .projects__card {
+  background-color: #f5e5c2;
+  -webkit-box-shadow: -1rem 0 3rem #F5DCA3;
+          box-shadow: -1rem 0 3rem #F5DCA3;
+  color: #001514;
+  font-weight: 600;
+}
+
+.light .projects__btn {
+  color: #001514;
+  font-weight: 600;
+}
+
+.light .contact {
+  color: #001514;
+  font-weight: 600;
+}
+
+.light .contact h2 {
+  color: #6B0504;
+  font-weight: 600;
+}
+
+.light .contact .text-secondary {
+  color: #6B0504;
+}
+
 @media screen and (max-width: 1024px) {
   main {
     width: 100% !important;
@@ -476,6 +601,12 @@
         -ms-flex-direction: row;
             flex-direction: row;
   }
+  .navbar .navbar-nav .nav-item {
+    margin-top: auto;
+  }
+  .navbar .navbar-nav .nav-item:nth-last-child(-n+1) {
+    display: none;
+  }
   .navbar .navbar-nav .nav-link {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -484,13 +615,16 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-bottom: 1.25rem;
+    padding-bottom: 0.75rem;
   }
   .navbar .navbar-nav .nav-link .link-text {
     display: block;
     margin-top: 0.3em;
     margin-left: 0;
     color: white;
+  }
+  .lightSwitch {
+    display: block;
   }
   .carrousel {
     margin-left: 2.5rem;
@@ -560,7 +694,7 @@
   .projectTitle {
     margin-top: 10vh;
   }
-  .nav-item:nth-last-child(-n+1) {
+  .nav-item:nth-last-child(-n+2) {
     display: none;
   }
   .contact {
@@ -569,7 +703,7 @@
 }
 
 @media screen and (max-width: 400px) {
-  .nav-item:nth-last-child(-n+2) {
+  .nav-item:nth-last-child(-n+3) {
     display: none;
   }
   .carrousel .my-slider .currentCard .bannerLogo {
