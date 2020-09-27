@@ -53,7 +53,11 @@
     .projects {
 
         &__card {
-            flex: 0 1 48%
+            flex: 0 1 48%;
+
+            &:last-child {
+                margin-bottom: 5rem;
+            }
         }
 
         .text-secondary {
