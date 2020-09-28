@@ -10,10 +10,13 @@
 
     &__cards {
         margin: 2rem auto 0 auto;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 8rem;
+        // display: flex;
+        // flex-wrap: wrap;
+        // flex-direction: row;
+        // justify-content: space-between;
         width: 80vw;
         height: 60vh;
 
@@ -35,8 +38,9 @@
         background-color: #17141d;
         border-radius: 10px;
         box-shadow: -1rem 0 3rem #000;
-        flex: 0 1 28%;
-        max-height: auto;
+        // flex: 0 1 28%;
+        // max-height: auto;
+        grid-auto-rows: minmax(100px, auto);
 
         &:last-child {
             margin-bottom: 1rem;
@@ -56,7 +60,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        bottom: 0;
     }
 
     &__btn {
