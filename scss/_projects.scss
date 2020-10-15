@@ -33,6 +33,9 @@
     }
 
     &__card {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
         position: relative;
         margin-bottom: 2rem;
         background-color: #17141d;
@@ -46,12 +49,23 @@
             margin-bottom: 1rem;
         }
 
+        .image_container {
+            height: 200px;
+        }
+
         .projectImage {
             border-radius: 10px 10px 0px 0px;
             max-width: 100%;
             height: auto;
             background-color: white;
         }
+    }
+
+    &__content {
+        display: flex;
+        flex-grow: 2;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     &__btns {
