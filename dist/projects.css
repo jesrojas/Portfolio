@@ -1,0 +1,15 @@
+.projects__card {
+	 display: flex;
+	 flex-direction: column;
+}
+
+.projects__card .image_container {
+	 height: 200px;
+}
+
+.projects__content {
+	 display: flex;
+	 flex-grow: 1;
+	 flex-direction: column;
+	 justify-content: space-between;
+}
